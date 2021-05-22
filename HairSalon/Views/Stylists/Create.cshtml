@@ -1,0 +1,46 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist
+
+<h4>Add a new Stylist</h4>
+@using (Html.BeginForm())
+{
+  <li>
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+</li>
+
+  <li>
+  @Html.LabelFor(model => model.Details)
+  @Html.TextBoxFor(model => model.Details)
+</li>
+  //shift detail
+
+  List<SelectListItem> listItems = new List<SelectListItem>();
+  listItems.Add(new SelectListItem
+  {
+    Text = "Day",
+    Value = "Day",
+    Selected = true
+  });
+  listItems.Add(new SelectListItem
+  {
+    Text = "Afternoon",
+    Value = "Afternoon"
+  });
+  listItems.Add(new SelectListItem
+  {
+    Text = "Late Afternoon",
+    Value = "Late Afternoon"
+  });
+
+  <li>Perferred Shift:
+  @Html.DropDownListFor(model => model.Shift, listItems, "-- Select Status --")
+</li>
+
+  <li> <input type="submit" value="Add new Stylist" /></li>
+
+}
+<p>@Html.ActionLink("Show all stylists", "Index")</p>

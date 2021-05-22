@@ -39,8 +39,6 @@ namespace HairSalon
     public ActionResult Details(int id)
     {
       Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
-      // Cuisine thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == thisRestaurant.CuisineId);
-      // ViewBag.CuisineName = thisRestaurant.Cuisine.Name;
       return View(thisClient);
     }
 

@@ -1,0 +1,46 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist
+
+<h2>Edit</h2>
+
+<h4>Edit the information for this Stylist: @Html.DisplayFor(model => model.Name)</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.StylistId)
+
+  <li>@Html.LabelFor(model => model.Name)
+  @Html.EditorFor(model => model.Name)</li>
+
+  <li>@Html.LabelFor(model => model.Details)
+  @Html.EditorFor(model => model.Details)</li>
+
+  //shift edit detail
+  List<SelectListItem> listItems = new List<SelectListItem>();
+  listItems.Add(new SelectListItem
+  {
+    Text = "Day",
+    Value = "Day",
+    Selected = true
+  });
+  listItems.Add(new SelectListItem
+  {
+    Text = "Afternoon",
+    Value = "Afternoon"
+  });
+  listItems.Add(new SelectListItem
+  {
+    Text = "Late Afternoon",
+    Value = "Late Afternoon"
+  });
+
+  <li>Perferred Shift:
+  @Html.DropDownListFor(model => model.Shift, listItems, "-- Select Status --")
+</li>
+
+  <input type="submit" value="Save" />
+}
+<p>@Html.ActionLink("Back to list of stylists", "Index")</p>

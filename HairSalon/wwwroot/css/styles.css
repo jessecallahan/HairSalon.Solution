@@ -1,0 +1,31 @@
+body {
+  background-color:rgb(255, 93, 147);
+  list-style-type: none;
+  margin: auto;
+  margin-top: 30px;
+  width: 70%;
+  border: 3px solid green;
+  padding: 10px;
+  font-family:"salon1";
+  font-size: 30px;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: black;
+}
+
+@font-face
+{
+font-family:"salon1";
+src:url('/fonts/monicas-salon.salonshadownf.ttf');
+}
+
+
