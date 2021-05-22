@@ -41,7 +41,7 @@ _**Client Class**_
 | 0  |  "Client" | $0 | ReturnPastryTotalCost_ReturnsPastryTotalCostTest1_Int()|
 
 
-![image info](./images/schema_pic.png)
+![image info](./HairSalon/wwwroot/images/schema_pic.png)
 ## Technologies Used
 * C#
 * MySql
