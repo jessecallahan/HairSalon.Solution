@@ -23,7 +23,7 @@ Eau Clarie's Salon is a C# application in the .NET MVC Framework that utilizes a
 7. Enjoy!
 
 ## Specs
-
+BELOW IS A SCHEMA CHART
 ![image info](./HairSalon/wwwroot/images/schema_pic.png)
 ## Technologies Used
 * C#
