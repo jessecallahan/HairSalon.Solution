@@ -13,11 +13,11 @@ Eau Clarie's Salon is a C# application in the .NET MVC Framework that utilizes a
 1. Clone this [repository](https://github.com/jessecallahan/HairSalon.Solution)
 2. From the project directory folder (HairSalon) create a 'appsettings.json' file 
 3. First, Copy this into the appsettings.json file:
-<br/>  `{
+<p>  `{
     "ConnectionStrings": {
         "DefaultConnection": "Server=localhost;Port=3306;database=jesse_callahan;uid=root;pwd=[YOUR-PASSWORD-HERE];"
     }
-}`<br/>  *[YOUR-PASSWORD-HERE] is your sql password*
+}`</p>  *[YOUR-PASSWORD-HERE] is your sql password*
 4. Now, Import Data into SQL Workbench (Download SQL WorkBench if you don't already have it) by:
 + In the Navigator > Administration window, select Data Import/Restore.
 + In Import Options select Import from Self-Contained File.
