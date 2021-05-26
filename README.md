@@ -12,7 +12,8 @@ Eau Clarie's Salon is a C# application in the .NET MVC Framework that utilizes a
 
 1. Clone this [repository](https://github.com/jessecallahan/HairSalon.Solution)
 2. From the project directory folder (HairSalon) create a 'appsettings.json' file 
-3. First, Copy this into the appsettings.json file:<br/>  `{
+3. First, Copy this into the appsettings.json file:
+<br/>  `{
     "ConnectionStrings": {
         "DefaultConnection": "Server=localhost;Port=3306;database=jesse_callahan;uid=root;pwd=[YOUR-PASSWORD-HERE];"
     }
