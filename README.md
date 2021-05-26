@@ -20,7 +20,7 @@ Eau Clarie's Salon is a C# application in the .NET MVC Framework that utilizes a
 4. Now, Import Data into SQL Workbench (Download SQL WorkBench if you don't already have it) by:
 + In the Navigator > Administration window, select Data Import/Restore.
 + In Import Options select Import from Self-Contained File.
-+ Navigate to the jesse_callahan.sql file.
++ Navigate to the jesse_callahan.sql file in the root (HairSalon.Solution) folder.
 + Under Default Schema to be Imported To, select the New button.
 + Enter the name of this database which is: jesse_callahan
 + Click Ok.
